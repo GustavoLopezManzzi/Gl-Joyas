@@ -111,7 +111,7 @@ header{
     grid-area: destacados__titulo;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: red;
+    color: rgba(75, 33, 0, 1);
 }
 
 .destacados__articulo1{
