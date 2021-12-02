@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/Icono GL Joyas.svg" type="image/x-icon">
+    <!-- Vinculo al CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>GL Joyas</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo"><img width="100%" class="nav__img" src="./assets/img/Icono GL Joyas.svg" alt="Logo"></a>
+            <div class="nav__links">
+                <a href="index.html" class="nav__links
+                nav__links--color">HOME</a>
+                <a href="./pages/caravanas.html" target="_blank" class="nav__links">Caravanas</a>
+                <a href="pages/anillos.html" target="_blank" class="nav__links">Anillos</a>
+                <a href="pages/collares.html" target="_blank" class="nav__links">Collares</a>
+                <a href="pages/contacto.html" target="_blank" class="nav__links">Contacto</a>
+                <!-- <a href="#dondeEncontrarnos" class="nav__links" >¿Donde Encontrarnos?</a>  -->
+            </div>
+        </nav>
+    </header>
+    <!-- Termina Header -->
+    <!-- Imagenes Portada-->
+    <section class="portada">
+        <img class="portada__img" src="./assets/img/portada.jpg" alt="portada">
+        <div class="portada__boton">
+            <a href="#quieneSomos" class="portada__boton" >Sobre Nosotros</a>
+            <a href="#catalogo" class="portada__boton
+            portada__boton--catalogo">Catálogo</a>
+        </div>
+    </section>
+    
+    <!-- Sección de Destacados (fotos con flechita para mover)-->
+    <section class="destacados">
+        <h2 class="destacados__titulo">DESTACADOS</h2>
+        <article class="destacados__articulo1">
+            <img class="destacados__img" src="./assets/img/Destacado1.jpg" alt="destacado N° 1">
+            <h4 class="destacados__nombre">Lorem, ipsum dolor.</h4>
+            <p class="destacados__precio">Precio</p>
+            <form class="destacados__agregarCarrito" action="" method="">
+                <input type="submit" value="Agregar al Carrito">
+            </form>
+        </article>
+        <article class="destacados__articulo2">
+            <img class="destacados__img" src="./assets/img/Destacado2.jpg" alt="destacado N° 2">
+            <h4 class="destacados__nombre">Lorem, ipsum dolor.</h4>
+            <p class="destacados__precio">Precio</p>
+            <form class="destacados__agregarCarrito" action="" method="">
+                <input type="submit" value="Agregar al Carrito">
+            </form>
+        </article>
+        <article class="destacados__articulo3">
+            <img class="destacados__img" src="./assets/img/Destacado3.jpg" alt="destacado N° 3"">
+            <h4 class="destacados__nombre">Lorem, ipsum dolor.</h4>
+            <p class="destacados__precio">Precio</p>
+            <div> 
+                <form class="destacados__agregarCarrito" action="" method="">
+                    <input type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </article>
+    </section>
+
+    <!-- Listas Anidadas -->
+    <div>
+        <img class="seccionConLogosYTextos" src="./assets/img/sectorConLogosYTexto.png" alt="sectorConLogosYTexto">
+    </div>
+
+    <!-- Sección de Fotos con Productos -->
+    <section id="catalogo">
+        <article class="catalogo__articulo">
+            <img class="catalogo__img" src="./assets/img/Compromisos.jpg" alt="imagenCompromisos">
+            <h3 class="catalogo__nombre">Compromiso</h3>
+        </article>
+        <article class="catalogo__articulo">
+            <img class="catalogo__img" src="./assets/img/paraEl.jpg" alt="paraEl">
+            <h3 class="catalogo__nombre">Caballeros</h3>
+        </article>
+        <article class="catalogo__articulo">
+            <img class="catalogo__img" src="./assets/img/paraElla.jpg" alt="paraElla">
+            <h3 class="catalogo__nombre">Para Ella</h3>
+        </article>
+        <article class="catalogo__articulo">
+            <img class="catalogo__img" src="./assets/img/caravanas.jpg" alt="imagenSeccionCaravanas">
+            <a href="./pages/caravanas.html" target="_blank" class="catalogo__nombre"><h3>Caravanas</h3></a>
+        </article>
+        <article class="catalogo__articulo">
+            <img class="catalogo__img" src="./assets/img/casamientos.jpg" alt="imagenSeccionAnillos">
+            <a href="pages/anillos.html" target="_blank" class="catalogo__nombre"><h3>Anillos</h3></a>
+        </article>
+        <article class="catalogo__articulo">
+            <img class="catalogo__img" src="./assets/img/collares.jpg" alt="imagenSeccionCollares">
+            <a href="pages/collares.html" target="_blank" class="catalogo__nombre"><h3>Collares</h3></a>
+        </article>
+    </section>
+
+    <!-- Sección de Quienes Somos -->
+    <section id="quieneSomos">
+        <article>
+            <img class="quieneSomos__img" src="./assets/img/fondoSeccionQuienesSomos.jpg" alt="fondoSeccionQuienesSomos">
+            <h2 class="quieneSomos__titulo">¿Quienes Somos?</h2>
+            <p class="quieneSomos__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sunt rerum qui reiciendis est magni sapiente voluptatibus a voluptatum sit vero dolor quasi nobis, quod, dolorem soluta. Aspernatur, tenetur voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, veniam rerum provident sint eveniet facilis? Architecto itaque placeat, unde ut, deserunt adipisci, asperiores ullam deleniti maxime reprehenderit recusandae aut! Repellendus?</p>
+        </article>
+    </section>
+
+    <!-- Video Corto de Joyas -->
+    <div class="video">
+        <img class="video__gif" src="./assets/video/videoInicio.gif" alt="giftIndex">
+    </div>
+
+    <!-- Sección Interna Donde Encontrarnos -->
+    <!-- <section id="dondeEncontrarnos">
+        <h3 class="dondeEncontrarnos__titulo">¿Donde Encontrarnos?</h3>
+        <article class="dondeEncontrarnos__locales">
+            <table border="2px" cellpadding="6px">
+                <tr>
+                    <th>Sucursal</th>
+                    <th>Horario</th>
+                    <th>Teléfono</th>
+                </tr>
+                <tr>
+                    <td>Montevideo Shopping</td>
+                    <td>10:00 a 22:00</td>
+                    <td>+598 95 287 190</td>
+                </tr>
+                <tr>
+                    <td>Terminal Tres Cruces</td>
+                    <td>09:00 a 22:30</td>
+                    <td>+598 02 021 586</td>
+                </tr>
+                <tr>
+                    <td>Punta Carretas Shopping</td>
+                    <td>11:00 a 00:00</td>
+                    <td>+598 02 451 886</td>
+                </tr>
+            </table> 
+        </article>
+        <article> -->
+            <!-- Ubicaciones -->      
+            <!-- <iframe class="dondeEncontrarnos__mapa" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30218.747671289027!2d-56.15433733102179!3d-34.89570328620179!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1635984986293!5m2!1ses-419!2suy" width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+    </section> -->
+
+    <!-- Comienza FOOTER -->
+    <footer>
+        <!-- Sección Nav del Footer -->
+        <section class="foo__logo">
+                <a href="index.html"><img width="100%" class="foo__img" src="./assets/img/Icono GL Joyas.svg" alt="Logo"></a>    
+        </section>
+        <section class="foo__links">
+            <nav>
+                <ul class="foo__links">
+                    </li>
+                        <a href="./pages/caravanas.html" target="_blank" class="foo__links">Caravanas</a>
+                    <li>
+                    <li>
+                        <a href="pages/anillos.html" target="_blank" class="foo__links">Anillos</a>
+                    </li>   
+                    <li>
+                        <a href="pages/collares.html" target="_blank" class="foo__links">Collares</a>
+                    </li> 
+                    <li>
+                        <a href="pages/contacto.html" target="_blank" class="foo__links">Contacto</a>
+                    </li> 
+                </ul>
+            </nav>
+            <!-- Sección Redes Sociales -->
+            <article class="foo__redes">
+                <p>¡Seguinos en nuestras Redes!</p>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/" target="_blank" style="color: transparent;"><img width="2%" src="./assets/iconosRedes/iconoFacebook.png" alt="iconoFacebook">
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/" target="_blank" style="color: transparent;"> <img width="2%" src="./assets/iconosRedes/iconoInstagram.png" alt="iconoInstagram">
+                </a>
+                <!-- Whatsapp -->
+                <a href="https://api.whatsapp.com/send/?phone=+95287190&text&app_absent=0" target="_blank"> <img width="2%" src="./assets/iconosRedes/iconoMessanger.png" alt="iconoWhatsapp">
+                </a>
+            </article>
+        </section>
+        
+        <!-- Sección de NewsLetter -->
+        <!-- <div>
+            <form action="" method="">
+                <div>Newsletter</div>
+                <p>¡Suscríbete y recibí nuestras novedades!</p>
+                <div>
+                    <label for="mail"></label>
+                    <input type="email" name="mail" placeholder="usuario@servidor.com" required>
+                    <input type="submit" value="Suscribirme">
+                </form>
+            </div>
+        </div> -->
+        <!-- <div> -->
+            <!-- <p>GL Joyas Copyright 2021 Todos los derechos reservados</p> -->
+        <!-- </div> -->
+    </footer>
+</body>
+</html>

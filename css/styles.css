@@ -1,0 +1,507 @@
+/*Reseteo CSS para subsanar las diferencias de márgenes del navegador*/
+*{
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: rgba(218, 192, 77, 0.534);
+}
+
+body{
+    background-color: white;
+}
+
+/*Seccion del Header*/
+header{
+    height: 10vh;
+    text-align: center;
+    font-weight: bolder;
+    font-family:inherit;
+    flex-wrap: wrap;
+    background-image: url('../assets/img/portada.jpg');
+}
+
+/*Metodología BEM*/
+.nav{
+    border-bottom: 2px solid rgba(114, 78, 42);
+    background-color: rgba(255, 255, 255, 0.911);
+    display: flex;
+    flex-wrap: nowrap;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: +1;
+}
+
+.nav__logo{
+    height: 100%;
+    background: none;
+    padding-left: 20px;
+}
+
+.nav__img{
+    height: 100%;
+}
+
+.nav__links{
+    display: flex;
+    padding-right: 20px;
+    color: rgb(163, 83, 22);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.nav__links--color{
+    font-weight: bold;
+    color: rgba(75, 33, 0, 1);
+}
+
+/*Fin Sección Header*/
+
+
+/*Seccion Portada*/
+.portada{
+    position: relative;
+    text-align: center;
+    background-color: rgba(248, 245, 245, 0.801);
+}
+
+.portada__img{
+    height: 65vh;
+    width: 100%;
+}
+
+.portada__boton{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    width: 150px;
+    font-size: 22px;
+    font-weight:bolder;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgba(75, 33, 0, 1);
+    background-color: rgb(217, 169, 122, 0.50);
+}
+
+.portada__boton--catalogo{
+    background-color: rgba(255, 255, 255, 0.36);
+    right: -70px;
+}
+
+/*Seccion Destacados*/
+.destacados{
+    display:grid;
+    grid-template-areas: 
+    "destacados__titulo destacados__titulo destacados__titulo"
+    "destacados__articulo1 destacados__articulo2 destacados__articulo3";
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 8vh 60%;
+    grid-column-gap: 4vw;
+    justify-items: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.destacados__titulo{
+    grid-area: destacados__titulo;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgba(75, 33, 0, 1);
+}
+
+.destacados__articulo1{
+    grid-area: destacados__articulo1;
+}
+.destacados__articulo2{
+    grid-area: destacados__articulo2;
+}
+.destacados__articulo3{
+    grid-area: destacados__articulo3;
+}
+
+.destacados__img{
+    height: 20vw;
+    width: 80%;
+    margin-left: 1.7vw;
+}
+
+.destacados__nombre{
+    text-align: center;
+    align-items: center;
+}
+
+.destacados__precio{
+    text-align: center;
+    align-items: center;
+}
+
+.destacados__agregarCarrito{
+    align-items: center;
+    text-align: center;
+}
+
+.seccionConLogosYTextos{
+    width: 100%;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+/*Seccion Catalogo-Productos*/
+#catalogo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.catalogo__articulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+    width: 450px;
+}
+
+.catalogo__img{
+    height: 90%;
+    width: 80%;
+    position: relative;
+}
+
+.catalogo__nombre{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 330px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+/*Seccion Quienes Somos*/
+
+/*Line Height Seccion Sobre Nosotros*/
+p{
+    line-height: 1.6;
+}
+
+#quieneSomos{
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.quieneSomos__img{
+    height: 400px;
+    width: 100%;
+}
+
+.quieneSomos__titulo{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(75, 33, 0, 1);
+}
+
+.quieneSomos__texto{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+}
+
+.video{
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.video__gif{
+    width: 100%;
+    height: 350px;
+    padding-bottom: 30px;
+}
+
+/*Seccion Donde Encontrarnos*/
+#dondeEncontrarnos{
+    display:inline-block;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: rgba(217, 169, 122, 1);
+    padding-left: 30px;
+}
+
+.dondeEncontrarnos__titulo{
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: rgba(75, 33, 0, 1);
+}
+
+.dondeEncontrarnos__locales{
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+.dondeEncontrarnos__mapa{
+    justify-content: space-around;
+    width: 600px;
+    float: inline-end;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: rgba(75, 33, 0, 1);
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    font-weight: bolder;
+    font-family:inherit;
+    background-color: rgba(117, 65, 25, 0.69);
+    height: 180px;
+    width: 100%;
+}
+
+.foo__logo{
+    float: left;
+    padding-left: 30px;
+    height: 80px;
+    background: none;
+}
+
+.foo__img{
+    height: 100%;
+}
+
+.foo__links{
+    display: block;
+    float: left;
+    padding-left: 20px;
+    color: rgba(75, 33, 0, 1);
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.foo__redes{
+    height: 100%;
+    background: none;
+    text-decoration: none;
+    font-family: cursive;
+    font-style: italic;
+    color: rgba(75, 33, 0, 1);
+    font-size: 14px;
+}
+
+/*.foo__bottom{
+    text-align: center;
+    font-weight: bolder;
+    font-family:inherit;
+    background-color: rgba(134, 102, 77, 1);
+}*/
+
+/*Paginas Secundarias*/
+.lineaSuperior{
+    display:inline-block;
+    justify-content: space-around;
+    width: 100%;
+    height: 42px;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: rgba(217, 169, 122, 0.78);
+}
+
+.lineaSuperior__titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: -5px;
+    color: rgba(75, 33, 0, 1);
+}
+
+.lineaSuperior__filtrar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+    padding-right: 20px;
+    color: rgba(75, 33, 0, 1);
+}
+
+/*Catalogo de Paginas Secundarias*/
+.productosDePaginas{
+    display:inline-block;
+    justify-content: space-around;
+    width: 100%;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 40px;
+    padding-left: 50px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.productosDePaginas__articulo{
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    height: 400px;
+    width: 400px;
+}
+
+.productosDePaginas__img{
+    height: 80%;
+    width: 70%;
+}
+
+.productosDePaginas__nombre{
+    text-align: center;
+    align-items: center;
+}
+
+.productosDePaginas__precio{
+    text-align: center;
+    align-items: center;
+}
+
+.productosDePaginas__agregarCarrito{
+    align-items: center;
+    text-align: center;
+}
+
+/*Pie de Pagina Caravanas*/
+.pieDeCaravanas{
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.pieDeCaravanas__foto{
+    width: 100%;
+    height: 550px;
+}
+
+/*Pie de Pagina Collares*/
+.pieDeCollares{
+    padding-top: 60px;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.pieDeCollares__foto{
+    padding-top: 60px;
+    width: 100%;
+    height: 550px;
+}
+
+/*Seccion Contactos*/
+.formularioContacto{
+    display: block;
+    margin-top: 30px;
+    margin-left: 130px;
+    padding-left: 50px;
+    width: 80%;
+    height: 600px;
+    background-color: rgba(217, 169, 122, 0.78);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.formularioContacto__titulo{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgba(75, 33, 0, 1);
+    padding-bottom: 30px;
+    padding-left: px;
+}
+
+.formularioContacto__mapa{
+    float: right;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+.formularioContacto__datos{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formularioContacto__salto{
+    display: block;
+    margin-top: 10px;
+}
+
+
+/*Responsive*/
+
+@media screen and (min-width:768px) {
+    .destacados{
+        grid-template-areas: 
+        "destacados__titulo"
+        "destacados__articulo1 destacados__articulo2"
+        "destacdos__articulo3"
+        ;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .destacados{
+        grid-template-areas: 
+        "destacados__articulo1 destacados__articulo2 destacados__articulo3"
+        "destacados__titulo"
+        ;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .portada__boton--catalogo{
+        font-size: 18px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .portada__boton{
+        font-size: 18px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .portada__img{
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav__links{
+        display: flex;
+        color: rgb(163, 83, 22);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+}
