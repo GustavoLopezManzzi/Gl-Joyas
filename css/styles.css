@@ -32,6 +32,24 @@ header{
     justify-content: space-between;
     position: fixed;
     z-index: +1;
+    /*animaciones*/
+    animation-name: animacion_nav;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+@keyframes animacion_nav {
+    25%{
+        background-color: rgba(217, 169, 122, 0.78);
+    }
+    50%{
+        background-color:rgba(218, 192, 77, 0.534);
+    }
+    75%{
+        background-color: rgba(248, 245, 245, 0.801);
+    }
+
+    
 }
 
 .nav__logo{
@@ -51,6 +69,30 @@ header{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    animation-name: animacion_navlinks;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    /*transiciones*/
+    transition-property: font size;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+@keyframes animacion_navlinks {
+    25%{
+        color: rgba(75, 33, 0, 1);
+    }
+    50%{
+        color: rgb(116, 3, 3);
+    }
+    75%{
+        color: rgb(31, 16, 2)
+    }
+    
+}
+
+.nav__links:hover{
+    font-size: 17px;
 }
 
 .nav__links--color{
@@ -143,6 +185,7 @@ header{
 .destacados__agregarCarrito{
     align-items: center;
     text-align: center;
+    border-radius: 2px;
 }
 
 .seccionConLogosYTextos{
@@ -169,13 +212,13 @@ header{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 450px;
-    width: 450px;
+    height: 420px;
+    width: 420px;
 }
 
 .catalogo__img{
     height: 90%;
-    width: 80%;
+    width: 90%;
     position: relative;
 }
 
@@ -189,7 +232,19 @@ header{
     align-items: center;
     color: white;
     font-size: 20px;
+    /*transiciones*/
+    transition-property: font size, background-color;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
 }
+
+.catalogo__nombre:hover{
+    font-size: 22px;
+    color: rgba(75, 33, 0, 1);
+    background-color: rgb(245, 212, 180);
+    border-radius: 10px;
+}
+
 
 /*Seccion Quienes Somos*/
 
@@ -503,5 +558,41 @@ footer{
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-style: italic;
+        font-size: 9px
+    }
+    .nav__links:hover{
+        font-size: 11px;
+        transition-duration: 0.3s;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quieneSomos__texto{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .formularioContacto{
+        display: block;
+        margin-block-start: 0%;
+        margin-top: 30px;
+        margin-left: -10px;
+        padding-left: 50px;
+        width: 100%;
+        height: 600px;
+        background-color: rgba(217, 169, 122, 0.78);
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formularioContacto__mapa{
+        display: none;
     }
 }
