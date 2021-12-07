@@ -567,12 +567,25 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+    .catalogo__articulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .quieneSomos__texto{
         position: absolute;
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 350px;
+        width: 300px;
+        font-size: 10px;
     }   
 }
 
