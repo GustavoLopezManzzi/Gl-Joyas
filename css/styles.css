@@ -126,6 +126,15 @@ header{
     text-decoration: none;
     color: rgba(75, 33, 0, 1);
     background-color: rgb(217, 169, 122, 0.50);
+    /*transiciones*/
+    transition-property: font size, background-color;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+}
+
+.portada__boton:hover{
+    color: rgb(245, 212, 180);
+    background-color: rgba(153, 71, 9, 0.89);
 }
 
 .portada__boton--catalogo{
