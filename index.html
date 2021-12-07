@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/Icono GL Joyas.svg" type="image/x-icon">
+    <!--Link de animate.css  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Vinculo al CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <title>GL Joyas</title>
 </head>
 <body>
+    <!-- Link de wow.js -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <header class="header">
         <nav class="nav">
-            <a href="index.html" class="nav__logo"><img width="100%" class="nav__img" src="./assets/img/Icono GL Joyas.svg" alt="Logo"></a>
+            <a href="index.html" class="nav__logo animate__animated animate__heartBeat"><img width="100%" class="nav__img" src="./assets/img/Icono GL Joyas.svg" alt="Logo"></a>
             <div class="nav__links">
                 <a href="index.html" class="nav__links
                 nav__links--color">HOME</a>
@@ -28,16 +38,16 @@
     <!-- Imagenes Portada-->
     <section class="portada">
         <img class="portada__img" src="./assets/img/portada.jpg" alt="portada">
-        <div class="portada__boton">
+        <div class="portada__boton animate__animated animate__fadeInDownBig">
             <a href="#quieneSomos" class="portada__boton" >Sobre Nosotros</a>
             <a href="#catalogo" class="portada__boton
             portada__boton--catalogo">Catálogo</a>
         </div>
     </section>
-    
+
     <!-- Sección de Destacados (fotos con flechita para mover)-->
     <section class="destacados">
-        <h2 class="destacados__titulo">DESTACADOS</h2>
+        <h2 class="destacados__titulo animate__animated animate__bounce">DESTACADOS</h2>
         <article class="destacados__articulo1">
             <img class="destacados__img" src="./assets/img/Destacado1.jpg" alt="destacado N° 1">
             <h4 class="destacados__nombre">Lorem, ipsum dolor.</h4>
