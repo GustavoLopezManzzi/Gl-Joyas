@@ -26,7 +26,6 @@ header{
     background-color: rgba(255, 255, 255, 0.911);
     display: flex;
     flex-wrap: nowrap;
-    height: 10vh;
     width: 100vw;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +52,8 @@ header{
 }
 
 .nav__logo{
-    height: 100%;
+    height: 80px;
+    width: 80px;
     background: none;
     padding-left: 20px;
 }
@@ -167,18 +167,20 @@ header{
 
 .destacados__articulo1{
     grid-area: destacados__articulo1;
+    align-items: center;
 }
 .destacados__articulo2{
     grid-area: destacados__articulo2;
+    align-items: center;
 }
 .destacados__articulo3{
     grid-area: destacados__articulo3;
+    align-items: center;
 }
 
 .destacados__img{
     height: 20vw;
-    width: 80%;
-    margin-left: 1.7vw;
+    width: 100%;
 }
 
 .destacados__nombre{
@@ -186,15 +188,35 @@ header{
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .destacados__nombre{
+        font-size: 10px;
+    }   
+}
+
 .destacados__precio{
     text-align: center;
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .destacados__precio{
+        font-size: 10px;
+    }   
+}
+
 .destacados__agregarCarrito{
     align-items: center;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 4px;
+    background-color: rgba(148, 66, 4, 0.788);
+    border-color: rgba(148, 66, 4, 0.788);
+}
+
+@media screen and (max-width: 768px) {
+    .destacados__agregarCarrito{
+        font-size: 8px;
+    }   
 }
 
 .seccionConLogosYTextos{
