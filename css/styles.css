@@ -639,8 +639,20 @@ footer{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1156px) {
     .formularioContacto__mapa{
-        display: none;
+        width: 400px;
+    }
+
+    @media screen and (max-width: 909px) {
+    .formularioContacto__mapa{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .formularioContacto__mapa{
+        width: 250px;
+        height: 250px;
     }
 }
