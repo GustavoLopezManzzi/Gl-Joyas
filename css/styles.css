@@ -639,7 +639,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 1156px) {
+@media screen and (max-width: 768px) {
     .formularioContacto__mapa{
         display: none;
     }
