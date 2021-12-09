@@ -643,6 +643,7 @@ footer{
     .formularioContacto__mapa{
         width: 400px;
     }
+}
 
     @media screen and (max-width: 909px) {
     .formularioContacto__mapa{
