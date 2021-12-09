@@ -190,7 +190,7 @@ header{
 
 @media screen and (max-width: 768px) {
     .destacados__nombre{
-        font-size: 10px;
+        font-size: 8px;
     }   
 }
 
@@ -201,7 +201,7 @@ header{
 
 @media screen and (max-width: 768px) {
     .destacados__precio{
-        font-size: 10px;
+        font-size: 8px;
     }   
 }
 
@@ -215,7 +215,7 @@ header{
 
 @media screen and (max-width: 768px) {
     .destacados__agregarCarrito{
-        font-size: 8px;
+        font-size: 6px;
     }   
 }
 
