@@ -424,6 +424,7 @@ footer{
 @media screen and (max-width:768px) {
     .lineaSuperior{
         height: 80px;
+        background-color: red;
     }
 }
 
