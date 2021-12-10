@@ -424,6 +424,7 @@ footer{
 @media screen and (max-width:768px) {
     .lineaSuperior{
         height: 75px;
+        background-color: rgba(217, 169, 122, 0.78);
     }
 }
 
