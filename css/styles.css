@@ -263,6 +263,7 @@ header{
     text-decoration: none;
     text-align: center;
     align-items: center;
+    font-style: none;
     color: white;
     font-size: 20px;
     /*transiciones*/
@@ -272,7 +273,7 @@ header{
 }
 
 .catalogo__nombre:hover{
-    font-size: 22px;
+    font-size: 24px;
     color: rgba(75, 33, 0, 1);
     background-color: rgb(245, 212, 180);
     border-radius: 10px;
