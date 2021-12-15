@@ -47,8 +47,6 @@ header{
     75%{
         background-color: rgba(248, 245, 245, 0.801);
     }
-
-    
 }
 
 .nav__logo{
@@ -72,6 +70,7 @@ header{
     animation-name: animacion_navlinks;
     animation-duration: 4s;
     animation-delay: 0s;
+    flex-grow: 0;
     /*transiciones*/
     transition-property: font size;
     transition-duration: 0.3s;
