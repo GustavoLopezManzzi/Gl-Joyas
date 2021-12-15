@@ -111,15 +111,15 @@ header{
 }
 
 .portada__img{
-    height: 65vh;
+    height: 90vh;
     width: 100%;
 }
 
 .portada__boton{
     position: absolute;
     bottom: 10px;
-    right: 100px;
-    width: 150px;
+    right: 130px;
+    width: 180px;
     font-size: 22px;
     font-weight:bolder;
     border-radius: 10px;
@@ -598,18 +598,19 @@ footer{
 }
 
 @media screen and (max-width:768px) {
-    .portada__boton--catalogo{
-        font-size: 18px;
+    .portada__boton{
+        font-size: 16px;
         width: 100px;
     }
 }
 
 @media screen and (max-width:768px) {
-    .portada__boton{
-        font-size: 18px;
-        width: 130px;
+    .portada__boton--catalogo{
+        font-size: 16px;
+        width: 100px;
     }
 }
+
 
 @media screen and (max-width:768px) {
     .portada__img{
