@@ -33,85 +33,89 @@ header{
         animation-name: animacion_nav;
         animation-duration: 4s;
         animation-delay: 0s;
+    }
     
-        .nav__logo{
-            height: 80px;
-            width: 80px;
-            background: none;
-            padding-left: 20px;
-            
-            .nav__img{
-                height: 100%;
-            }
+    .nav__logo{
+        height: 80px;
+        width: 80px;
+        background: none;
+        padding-left: 20px;
+    }
+    
+    .nav__img{
+        height: 100%;
+    }
+    
+    .nav__links{
+        display: flex;
+        padding-right: 20px;
+        color: rgb(163, 83, 22);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        animation-name: animacion_navlinks;
+        animation-duration: 4s;
+        animation-delay: 0s;
+        flex-grow: 0;
+        /*transiciones*/
+        transition-property: font size;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+    
+    @keyframes animacion_nav {
+        25%{
+            background-color: rgba(217, 169, 122, 0.78);
+        }
+        50%{
+            background-color:rgba(218, 192, 77, 0.534);
+        }
+        75%{
+            background-color: rgba(248, 245, 245, 0.801);
+        }
+    }
+    
+    
+    @keyframes animacion_navlinks {
+        25%{
+            color: rgba(75, 33, 0, 1);
+        }
+        50%{
+            color: rgb(116, 3, 3);
+        }
+        75%{
+            color: rgb(31, 16, 2)
         }
         
+    }
+    
+    .nav__links:hover{
+        font-size: 17px;
+    }
+    
+    .nav__links--color{
+        font-weight: bold;
+        color: rgba(75, 33, 0, 1);
+    }
+    
+    @media screen and (max-width:768px) {
         .nav__links{
             display: flex;
-            padding-right: 20px;
             color: rgb(163, 83, 22);
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
             font-style: italic;
-            animation-name: animacion_navlinks;
-            animation-duration: 4s;
-            animation-delay: 0s;
-            flex-grow: 0;
-            /*transiciones*/
-            transition-property: font size;
+            font-size: 9px
+        }
+        .nav__links:hover{
+            font-size: 11px;
             transition-duration: 0.3s;
-            transition-timing-function: linear;
-            
-            .nav__links:hover{
-                font-size: 17px;
-            }
-            
-            .nav__links--color{
-                font-weight: bold;
-                color: rgba(75, 33, 0, 1);
-            }
-        }
-
-        @keyframes animacion_nav {
-            25%{
-                background-color: rgba(217, 169, 122, 0.78);
-            }
-            50%{
-                background-color:rgba(218, 192, 77, 0.534);
-            }
-            75%{
-                background-color: rgba(248, 245, 245, 0.801);
-            }
-        }
-        
-        @keyframes animacion_navlinks {
-            25%{
-                color: rgba(75, 33, 0, 1);
-            }
-            50%{
-                color: rgb(116, 3, 3);
-            }
-            75%{
-                color: rgb(31, 16, 2)
-            }
-        }
-
-        @media screen and (max-width:768px) {
-            .nav__links{
-                display: flex;
-                color: rgb(163, 83, 22);
-                text-decoration: none;
-                font-family: Arial, Helvetica, sans-serif;
-                font-style: italic;
-                font-size: 9px
-            }
-            .nav__links:hover{
-                font-size: 11px;
-                transition-duration: 0.3s;
-            }
         }
     }
 }
 
+
+/*Fin Sección Header*/
 
 /*Fin Sección Header*/
 
@@ -686,3 +690,5 @@ footer{
         width: 350px;
     }
 }
+
+/*Termina Seccion Formulario*/

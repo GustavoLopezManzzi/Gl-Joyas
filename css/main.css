@@ -35,16 +35,16 @@ header .nav {
   animation-duration: 4s;
   animation-delay: 0s;
 }
-header .nav .nav__logo {
+header .nav__logo {
   height: 80px;
   width: 80px;
   background: none;
   padding-left: 20px;
 }
-header .nav .nav__logo .nav__img {
+header .nav__img {
   height: 100%;
 }
-header .nav .nav__links {
+header .nav__links {
   display: flex;
   padding-right: 20px;
   color: #a35316;
@@ -59,13 +59,6 @@ header .nav .nav__links {
   transition-property: font size;
   transition-duration: 0.3s;
   transition-timing-function: linear;
-}
-header .nav .nav__links .nav__links:hover {
-  font-size: 17px;
-}
-header .nav .nav__links .nav__links--color {
-  font-weight: bold;
-  color: #4b2100;
 }
 @keyframes animacion_nav {
   25% {
@@ -89,8 +82,15 @@ header .nav .nav__links .nav__links--color {
     color: #1f1002;
   }
 }
+header .nav__links:hover {
+  font-size: 17px;
+}
+header .nav__links--color {
+  font-weight: bold;
+  color: #4b2100;
+}
 @media screen and (max-width: 768px) {
-  header .nav .nav__links {
+  header .nav__links {
     display: flex;
     color: #a35316;
     text-decoration: none;
@@ -98,12 +98,13 @@ header .nav .nav__links .nav__links--color {
     font-style: italic;
     font-size: 9px;
   }
-  header .nav .nav__links:hover {
+  header .nav__links:hover {
     font-size: 11px;
     transition-duration: 0.3s;
   }
 }
 
+/*Fin Sección Header*/
 /*Fin Sección Header*/
 /*Seccion Portada*/
 .portada {
@@ -605,5 +606,6 @@ footer .foo__redes {
     width: 350px;
   }
 }
+/*Termina Seccion Formulario*/
 
 /*# sourceMappingURL=main.css.map */
