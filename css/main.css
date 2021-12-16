@@ -579,8 +579,9 @@ footer .foo__redes {
   display: block;
   margin-top: 10px;
 }
+
 @media screen and (max-width: 768px) {
-  .formularioContacto .formularioContacto {
+  .formularioContacto {
     display: block;
     margin-block-start: 0%;
     margin-top: 30px;
@@ -595,12 +596,12 @@ footer .foo__redes {
   }
 }
 @media screen and (max-width: 1156px) {
-  .formularioContacto .formularioContacto__mapa {
+  .formularioContacto__mapa {
     width: 400px;
   }
 }
 @media screen and (max-width: 909px) {
-  .formularioContacto .formularioContacto__mapa {
+  .formularioContacto__mapa {
     width: 350px;
   }
 }
