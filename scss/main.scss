@@ -10,7 +10,7 @@ body{
     background-color: white;
 }
 
-@import "header";
+@import "components/header";
 
 
 /*Seccion Portada*/
@@ -320,7 +320,7 @@ p{
     }
 }*/
 
-@import "footer";
+@import "components/footer";
 
 /*Paginas Secundarias*/
 .lineaSuperior{
