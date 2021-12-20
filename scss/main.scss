@@ -61,6 +61,10 @@ header{
         transition-property: font size;
         transition-duration: 0.3s;
         transition-timing-function: linear;
+
+        &:hover{
+            font-size: 17px;
+        }
     }
     
     @keyframes animacion_nav {
@@ -89,10 +93,6 @@ header{
         
     }
     
-    .nav__links:hover{
-        font-size: 17px;
-    }
-    
     .nav__links--color{
         font-weight: bold;
         color: rgba(75, 33, 0, 1);
@@ -105,11 +105,12 @@ header{
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
             font-style: italic;
-            font-size: 9px
-        }
-        .nav__links:hover{
-            font-size: 11px;
-            transition-duration: 0.3s;
+            font-size: 9px;
+            
+            &:hover{
+                font-size: 11px;
+                transition-duration: 0.3s;
+            }
         }
     }
 }
@@ -141,13 +142,13 @@ header{
         border-radius: 10px;
         text-decoration: none;
         color: rgba(75, 33, 0, 1);
-        background-color: rgb(217, 169, 122, 0.50);
+        background-color: rgb(217, 169, 122);
         /*transiciones*/
         transition-property: font size, background-color;
         transition-duration: 0.8s;
         transition-timing-function: linear;
         
-        .portada__boton:hover{
+        &:hover{
             color: rgb(245, 212, 180);
             background-color: rgba(153, 71, 9, 0.89);
         }
@@ -155,6 +156,11 @@ header{
         .portada__boton--catalogo{
             background-color: rgba(255, 255, 255, 0.36);
             right: -70px;
+            
+            &:hover{
+                color: rgb(245, 212, 180);
+                background-color: rgba(153, 71, 9, 0.89);
+            }
         }
     }
     
@@ -339,13 +345,13 @@ header{
             transition-property: font size, background-color;
             transition-duration: 0.8s;
             transition-timing-function: linear;
-        }
-        
-        .catalogo__nombre:hover{
-            font-size: 24px;
-            color: rgba(75, 33, 0, 1);
-            background-color: rgb(245, 212, 180);
-            border-radius: 10px;
+            
+            &:hover{
+                font-size: 24px;
+                color: rgba(75, 33, 0, 1);
+                background-color: rgb(245, 212, 180);
+                border-radius: 10px;
+            }
         }
     }
 }

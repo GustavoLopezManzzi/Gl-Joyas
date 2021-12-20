@@ -60,6 +60,9 @@ header .nav__links {
   transition-duration: 0.3s;
   transition-timing-function: linear;
 }
+header .nav__links:hover {
+  font-size: 17px;
+}
 @keyframes animacion_nav {
   25% {
     background-color: rgba(217, 169, 122, 0.78);
@@ -81,9 +84,6 @@ header .nav__links {
   75% {
     color: #1f1002;
   }
-}
-header .nav__links:hover {
-  font-size: 17px;
 }
 header .nav__links--color {
   font-weight: bold;
@@ -126,19 +126,23 @@ header .nav__links--color {
   border-radius: 10px;
   text-decoration: none;
   color: #4b2100;
-  background-color: rgba(217, 169, 122, 0.5);
+  background-color: #d9a97a;
   /*transiciones*/
   transition-property: font size, background-color;
   transition-duration: 0.8s;
   transition-timing-function: linear;
 }
-.portada .portada__boton .portada__boton:hover {
+.portada .portada__boton:hover {
   color: #f5d4b4;
   background-color: rgba(153, 71, 9, 0.89);
 }
 .portada .portada__boton .portada__boton--catalogo {
   background-color: rgba(255, 255, 255, 0.36);
   right: -70px;
+}
+.portada .portada__boton .portada__boton--catalogo:hover {
+  color: #f5d4b4;
+  background-color: rgba(153, 71, 9, 0.89);
 }
 @media screen and (max-width: 768px) {
   .portada .portada__boton {
