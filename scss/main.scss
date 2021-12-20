@@ -61,9 +61,23 @@ header{
         transition-property: font size;
         transition-duration: 0.3s;
         transition-timing-function: linear;
-
+        
         &:hover{
             font-size: 17px;
+        }
+        
+        @media screen and (max-width:768px) {
+            display: flex;
+            color: rgb(163, 83, 22);
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-size: 9px;
+            
+            &:hover{
+                font-size: 11px;
+                transition-duration: 0.3s;
+            }
         }
     }
     
@@ -98,21 +112,6 @@ header{
         color: rgba(75, 33, 0, 1);
     }
     
-    @media screen and (max-width:768px) {
-        .nav__links{
-            display: flex;
-            color: rgb(163, 83, 22);
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: italic;
-            font-size: 9px;
-            
-            &:hover{
-                font-size: 11px;
-                transition-duration: 0.3s;
-            }
-        }
-    }
 }
 
 
@@ -130,6 +129,10 @@ header{
     .portada__img{
         height: 90vh;
         width: 100%;
+
+        @media screen and (max-width:768px) {
+            height: 30vh;
+        }
     }
     
     .portada__boton{
@@ -152,6 +155,11 @@ header{
             color: rgb(245, 212, 180);
             background-color: rgba(153, 71, 9, 0.89);
         }
+
+        @media screen and (max-width:768px) {
+            font-size: 16px;
+            width: 100px;
+        }
         
         .portada__boton--catalogo{
             background-color: rgba(255, 255, 255, 0.36);
@@ -161,26 +169,11 @@ header{
                 color: rgb(245, 212, 180);
                 background-color: rgba(153, 71, 9, 0.89);
             }
-        }
-    }
-    
-    @media screen and (max-width:768px) {
-        .portada__boton{
-            font-size: 16px;
-            width: 100px;
-        }
-    }
-
-    @media screen and (max-width:768px) {
-        .portada__boton--catalogo{
-            font-size: 16px;
-            width: 100px;
-        }
-    }
-
-    @media screen and (max-width:768px) {
-        .portada__img{
-            height: 30vh;
+            
+            @media screen and (max-width:768px) {
+                font-size: 16px;
+                width: 100px;
+            }
         }
     }
 }
@@ -200,6 +193,21 @@ header{
     font-style: italic;
     padding-top: 30px;
     background-color: rgba(255, 255, 255, 0.801);
+
+    @media screen and (min-width:768px) {
+        grid-template-areas: 
+        "destacados__titulo"
+        "destacados__articulo1 destacados__articulo2"
+        "destacdos__articulo3"
+        ;
+    }
+
+    @media screen and (min-width:1200px) {
+        grid-template-areas: 
+        "destacados__articulo1 destacados__articulo2 destacados__articulo3"
+        "destacados__titulo"
+        ;
+    }
     
     .destacados__titulo{
         grid-area: destacados__titulo;
@@ -229,21 +237,17 @@ header{
     .destacados__nombre{
         text-align: center;
         align-items: center;
+        
+        @media screen and (max-width: 768px) {
+            font-size: 8px;   
+        }
     }
 
-    @media screen and (max-width: 768px) {
-        .destacados__nombre{
-            font-size: 8px;
-        }   
-    }
-    
     .destacados__precio{
         text-align: center;
         align-items: center;
-    }
-    
-    @media screen and (max-width: 768px) {
-        .destacados__precio{
+        
+        @media screen and (max-width: 768px) {
             font-size: 8px;
         }   
     }
@@ -254,30 +258,9 @@ header{
         border-radius: 4px;
         background-color: rgba(148, 66, 4, 0.788);
         border-color: rgba(148, 66, 4, 0.788);
-    }
-    
-    @media screen and (max-width: 768px) {
-        .destacados__agregarCarrito{
+        
+        @media screen and (max-width: 768px) {
             font-size: 6px;
-        }   
-    }
-
-    @media screen and (min-width:768px) {
-        .destacados{
-            grid-template-areas: 
-            "destacados__titulo"
-            "destacados__articulo1 destacados__articulo2"
-            "destacdos__articulo3"
-            ;
-        }
-    }
-    
-    @media screen and (min-width:1200px) {
-        .destacados{
-            grid-template-areas: 
-            "destacados__articulo1 destacados__articulo2 destacados__articulo3"
-            "destacados__titulo"
-            ;
         }
     }
 }
@@ -309,17 +292,15 @@ header{
         width: 420px;
 
         @media screen and (max-width: 768px) {
-            .catalogo__articulo{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                text-align: center;
-                height: 400px;
-                width: 400px;
-                max-width: 100%;
-                max-height: 100%;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            height: 400px;
+            width: 400px;
+            max-width: 100%;
+            max-height: 100%;
         }
         
         .catalogo__img{
@@ -387,18 +368,17 @@ p{
         left: 50%;
         transform: translate(-50%, -50%);
         width: 420px;
-    }
-    
-    @media screen and (max-width: 768px) {
-        .quieneSomos__texto{
+        
+        @media screen and (max-width: 768px) {
             position: absolute;
             top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 300px;
             font-size: 10px;
-        }   
+        }
     }
+    
 }
 
 
@@ -512,10 +492,8 @@ footer{
     background-color: rgba(217, 169, 122, 0.78);
     
     @media screen and (max-width:768px) {
-        .lineaSuperior{
-            height: 75px;
-            background-color: rgba(217, 169, 122, 0.78);
-        }
+        height: 75px;
+        background-color: rgba(217, 169, 122, 0.78);
     }
     
     .lineaSuperior__titulo{
@@ -529,13 +507,6 @@ footer{
         color: rgba(75, 33, 0, 1);
     }
     
-    @media screen and (max-width:768px) {
-        .lineaSuperior__filtrar{
-            font-size: 8px;
-            padding-left: 2px;
-        }
-    }
-    
     .lineaSuperior__filtrar{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
@@ -543,10 +514,13 @@ footer{
         text-align: right;
         padding-right: 20px;
         color: rgba(75, 33, 0, 1);
-    }
     
-    @media screen and (max-width:768px) {
-        .lineaSuperior__filtrar{
+        @media screen and (max-width:768px) {
+            font-size: 8px;
+            padding-left: 2px;
+        }
+        
+        @media screen and (max-width:768px) {
             font-size: 10px;
             padding-right: 2px;
         }
@@ -643,6 +617,20 @@ footer{
     margin-bottom: 30px;
     flex-wrap: wrap;
     
+    @media screen and (max-width: 768px) {
+        display: block;
+        margin-block-start: 0%;
+        margin-top: 30px;
+        margin-left: -10px;
+        padding-left: 50px;
+        width: 100%;
+        height: 1200px;
+        background-color: rgba(217, 169, 122, 0.78);
+        border-radius: 30px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
     .formularioContacto__titulo{
         display: block;
         font-family: Arial, Helvetica, sans-serif;
@@ -656,6 +644,14 @@ footer{
         float: right;
         padding-right: 40px;
         padding-top: 60px;
+
+        @media screen and (max-width: 1156px) {
+            width: 400px;
+        }
+
+        @media screen and (max-width: 909px) {
+            width: 350px;
+        }
     }
     
     .formularioContacto__datos{
@@ -669,32 +665,5 @@ footer{
     }
 }
 
-@media screen and (max-width: 768px) {
-    .formularioContacto{
-        display: block;
-        margin-block-start: 0%;
-        margin-top: 30px;
-        margin-left: -10px;
-        padding-left: 50px;
-        width: 100%;
-        height: 1200px;
-        background-color: rgba(217, 169, 122, 0.78);
-        border-radius: 30px;
-        margin-bottom: 30px;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 1156px) {
-    .formularioContacto__mapa{
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 909px) {
-    .formularioContacto__mapa{
-        width: 350px;
-    }
-}
 
 /*Termina Seccion Contactos*/
