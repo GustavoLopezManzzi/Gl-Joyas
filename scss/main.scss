@@ -11,7 +11,9 @@ body{
 }
 
 @import "components/header";
-
+@import "base/maps";
+@import "base/extends";
+@import "base/mixins";
 
 /*Seccion Portada*/
 .portada{
@@ -20,8 +22,7 @@ body{
     background-color: rgba(248, 245, 245, 0.801);
     
     .portada__img{
-        height: 90vh;
-        width: 100%;
+        @include tamaño(100%, 90vh);
 
         @media screen and (max-width:768px) {
             height: 30vh;
@@ -38,7 +39,7 @@ body{
         border-radius: 10px;
         text-decoration: none;
         color: rgba(75, 33, 0, 1);
-        background-color: rgb(217, 169, 122);
+        background-color: map-get($botonPortada, nosotros);
         /*transiciones*/
         transition-property: font size, background-color;
         transition-duration: 0.8s;
@@ -55,7 +56,7 @@ body{
         }
         
         .portada__boton--catalogo{
-            background-color: rgba(255, 255, 255, 0.36);
+            background-color: map-get($botonPortada, catalogo);
             right: -70px;
             
             &:hover{
@@ -111,25 +112,26 @@ body{
     
     .destacados__articulo1{
         grid-area: destacados__articulo1;
-        align-items: center;
+        background-color: rgb(241, 210, 151);
+        @extend %center;
     }
     .destacados__articulo2{
         grid-area: destacados__articulo2;
-        align-items: center;
+        background-color: rgb(241, 210, 151);
+        @extend %center;
     }
     .destacados__articulo3{
         grid-area: destacados__articulo3;
-        align-items: center;
+        background-color: rgb(241, 210, 151);
+        @extend %center;
     }
     
     .destacados__img{
-        height: 20vw;
-        width: 100%;
+        @include tamaño(100%, 20vw);
     }
     
     .destacados__nombre{
-        text-align: center;
-        align-items: center;
+        @extend %center;
         
         @media screen and (max-width: 768px) {
             font-size: 8px;   
@@ -137,8 +139,7 @@ body{
     }
 
     .destacados__precio{
-        text-align: center;
-        align-items: center;
+        @extend %center;
         
         @media screen and (max-width: 768px) {
             font-size: 8px;
@@ -146,8 +147,7 @@ body{
     }
     
     .destacados__agregarCarrito{
-        align-items: center;
-        text-align: center;
+        @extend %center;
         border-radius: 4px;
         background-color: rgba(148, 66, 4, 0.788);
         border-color: rgba(148, 66, 4, 0.788);
@@ -181,8 +181,7 @@ body{
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        height: 420px;
-        width: 420px;
+        @include tamaño(420px, 420px);
 
         @media screen and (max-width: 768px) {
             display: flex;
@@ -190,15 +189,13 @@ body{
             justify-content: space-around;
             align-items: center;
             text-align: center;
-            height: 400px;
-            width: 400px;
+            @include tamaño(400px, 400px);
             max-width: 100%;
             max-height: 100%;
         }
         
         .catalogo__img{
-            height: 90%;
-            width: 80%;
+            @include tamaño(80%, 90%);
             position: relative;
             max-width: 100%;
             max-height: 100%;
@@ -244,8 +241,7 @@ p{
     background-color: rgba(255, 255, 255, 0.801);
     
     .quieneSomos__img{
-        height: 400px;
-        width: 100%;
+        @include tamaño(100%, 500px);
     }
     .quieneSomos__titulo{
         position: absolute;
@@ -280,8 +276,7 @@ p{
     background-color: rgba(255, 255, 255, 0.801);
 
     .video__gif{
-        width: 100%;
-        height: 350px;
+        @include tamaño(100%, 500px);
         padding-bottom: 30px;
     }
 }

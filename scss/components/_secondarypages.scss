@@ -1,10 +1,10 @@
+@import "../base/mixins";
 /*Paginas Secundarias*/
 .lineaSuperior{
     display:inline-block;
     justify-content: center;
-    justify-items: center; 
-    width: 100%;
-    height: 60px;
+    justify-items: center;
+    @include tamaño(100%, 60px);
     margin-top: 20px;
     font-weight: bolder;
     font-style: italic;
@@ -55,7 +55,6 @@
     width: 100%;
     font-weight: bolder;
     font-style: italic;
-    padding-top: 30px;
     font-weight: bolder;
     font-style: italic;
     padding-top: 40px;
@@ -67,14 +66,12 @@
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        height: 400px;
-        width: 400px;
+        @include tamaño(400px, 400px);
         margin-top: 100px;
     }
     
     .productosDePaginas__img{
-        height: 80%;
-        width: 80%;
+        @include tamaño(80%, 80%);
         max-width: 100%;
         max-height: 100%;
     }
@@ -105,8 +102,7 @@
     background-color: rgba(255, 255, 255, 0.801);
     
     .pieDeCaravanas__foto{
-        width: 100%;
-        height: 550px;
+        @include tamaño(100%, 550px);
     }
 }
 
@@ -117,8 +113,7 @@
     background-color: rgba(255, 255, 255, 0.801);
     
     .pieDeCollares__foto{
-        width: 100%;
-        height: 550px;
+        @include tamaño(100%, 450px);
     }
 }
 
@@ -129,8 +124,7 @@
     margin-top: 30px;
     margin-left: 130px;
     padding-left: 50px;
-    width: 80%;
-    height: 850px;
+    @include tamaño(80%, 850px);
     background-color: rgba(217, 169, 122, 0.78);
     border-radius: 30px;
     margin-bottom: 30px;
@@ -142,8 +136,7 @@
         margin-top: 30px;
         margin-left: -10px;
         padding-left: 50px;
-        width: 100%;
-        height: 1200px;
+        @include tamaño(100%, 1200px);
         background-color: rgba(217, 169, 122, 0.78);
         border-radius: 30px;
         margin-bottom: 30px;

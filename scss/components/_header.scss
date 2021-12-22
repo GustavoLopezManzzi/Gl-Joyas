@@ -1,3 +1,4 @@
+@import "../base/mixins";
 /*Seccion del Header*/
 header{
     height: 10vh;
@@ -24,8 +25,7 @@ header{
     }
     
     .nav__logo{
-        height: 80px;
-        width: 80px;
+        @include tamaño(80px, 80px);
         background: none;
         padding-left: 20px;
     }

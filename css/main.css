@@ -36,8 +36,8 @@ header .nav {
   animation-delay: 0s;
 }
 header .nav__logo {
-  height: 80px;
   width: 80px;
+  height: 80px;
   background: none;
   padding-left: 20px;
 }
@@ -105,6 +105,14 @@ header .nav__links--color {
 }
 
 /*Fin Sección Header*/
+/*Maps*/
+/*extends*/
+.destacados .destacados__agregarCarrito, .destacados .destacados__precio, .destacados .destacados__nombre, .destacados .destacados__articulo3, .destacados .destacados__articulo2, .destacados .destacados__articulo1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Seccion Portada*/
 .portada {
   position: relative;
@@ -112,8 +120,8 @@ header .nav__links--color {
   background-color: rgba(248, 245, 245, 0.801);
 }
 .portada .portada__img {
-  height: 90vh;
   width: 100%;
+  height: 90vh;
 }
 @media screen and (max-width: 768px) {
   .portada .portada__img {
@@ -192,32 +200,24 @@ header .nav__links--color {
 }
 .destacados .destacados__articulo1 {
   grid-area: destacados__articulo1;
-  align-items: center;
+  background-color: #f1d297;
 }
 .destacados .destacados__articulo2 {
   grid-area: destacados__articulo2;
-  align-items: center;
+  background-color: #f1d297;
 }
 .destacados .destacados__articulo3 {
   grid-area: destacados__articulo3;
-  align-items: center;
+  background-color: #f1d297;
 }
 .destacados .destacados__img {
-  height: 20vw;
   width: 100%;
-}
-.destacados .destacados__nombre {
-  text-align: center;
-  align-items: center;
+  height: 20vw;
 }
 @media screen and (max-width: 768px) {
   .destacados .destacados__nombre {
     font-size: 8px;
   }
-}
-.destacados .destacados__precio {
-  text-align: center;
-  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .destacados .destacados__precio {
@@ -225,8 +225,6 @@ header .nav__links--color {
   }
 }
 .destacados .destacados__agregarCarrito {
-  align-items: center;
-  text-align: center;
   border-radius: 4px;
   background-color: rgba(148, 66, 4, 0.788);
   border-color: rgba(148, 66, 4, 0.788);
@@ -260,8 +258,8 @@ header .nav__links--color {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 420px;
   width: 420px;
+  height: 420px;
 }
 @media screen and (max-width: 768px) {
   #catalogo .catalogo__articulo {
@@ -270,15 +268,15 @@ header .nav__links--color {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 400px;
     width: 400px;
+    height: 400px;
     max-width: 100%;
     max-height: 100%;
   }
 }
 #catalogo .catalogo__articulo .catalogo__img {
-  height: 90%;
   width: 80%;
+  height: 90%;
   position: relative;
   max-width: 100%;
   max-height: 100%;
@@ -318,8 +316,8 @@ p {
   background-color: rgba(255, 255, 255, 0.801);
 }
 #quieneSomos .quieneSomos__img {
-  height: 400px;
   width: 100%;
+  height: 500px;
 }
 #quieneSomos .quieneSomos__titulo {
   position: absolute;
@@ -352,7 +350,7 @@ p {
 }
 .video .video__gif {
   width: 100%;
-  height: 350px;
+  height: 500px;
   padding-bottom: 30px;
 }
 
@@ -395,8 +393,8 @@ footer {
   font-weight: bolder;
   font-family: inherit;
   background-color: rgba(117, 65, 25, 0.69);
-  height: 180px;
   width: 100%;
+  height: 180px;
   /*.foo__bottom{
       text-align: center;
       font-weight: bolder;
@@ -491,7 +489,6 @@ footer .foo__redes {
   width: 100%;
   font-weight: bolder;
   font-style: italic;
-  padding-top: 30px;
   font-weight: bolder;
   font-style: italic;
   padding-top: 40px;
@@ -503,13 +500,13 @@ footer .foo__redes {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 400px;
   width: 400px;
+  height: 400px;
   margin-top: 100px;
 }
 .productosDePaginas .productosDePaginas__img {
-  height: 80%;
   width: 80%;
+  height: 80%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -546,7 +543,7 @@ footer .foo__redes {
 }
 .pieDeCollares .pieDeCollares__foto {
   width: 100%;
-  height: 550px;
+  height: 450px;
 }
 
 /*Seccion Contactos*/
