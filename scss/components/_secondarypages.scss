@@ -102,7 +102,7 @@
     background-color: rgba(255, 255, 255, 0.801);
     
     .pieDeCaravanas__foto{
-        @include tamaño(100%, 550px);
+        @include tamaño(100%, 400px);
     }
 }
 
@@ -113,7 +113,7 @@
     background-color: rgba(255, 255, 255, 0.801);
     
     .pieDeCollares__foto{
-        @include tamaño(100%, 450px);
+        @include tamaño(100%, 400px);
     }
 }
 

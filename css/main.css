@@ -174,7 +174,7 @@ header .nav__links--color {
   display: grid;
   grid-template-areas: "destacados__titulo destacados__titulo destacados__titulo" "destacados__articulo1 destacados__articulo2 destacados__articulo3";
   grid-template-columns: 30vw 30vw 30vw;
-  grid-template-rows: 8vh 60%;
+  grid-template-rows: 8vh 80%;
   grid-column-gap: 4vw;
   justify-items: center;
   font-weight: bolder;
@@ -317,7 +317,7 @@ p {
 }
 #quieneSomos .quieneSomos__img {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 #quieneSomos .quieneSomos__titulo {
   position: absolute;
@@ -350,7 +350,7 @@ p {
 }
 .video .video__gif {
   width: 100%;
-  height: 500px;
+  height: 350px;
   padding-bottom: 30px;
 }
 
@@ -533,7 +533,7 @@ footer .foo__redes {
 }
 .pieDeCaravanas .pieDeCaravanas__foto {
   width: 100%;
-  height: 550px;
+  height: 400px;
 }
 
 /*Pie de Pagina Collares*/
@@ -543,7 +543,7 @@ footer .foo__redes {
 }
 .pieDeCollares .pieDeCollares__foto {
   width: 100%;
-  height: 450px;
+  height: 400px;
 }
 
 /*Seccion Contactos*/

@@ -80,7 +80,7 @@ body{
     "destacados__titulo destacados__titulo destacados__titulo"
     "destacados__articulo1 destacados__articulo2 destacados__articulo3";
     grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: 8vh 60%;
+    grid-template-rows: 8vh 80%;
     grid-column-gap: 4vw;
     justify-items: center;
     font-weight: bolder;
@@ -241,7 +241,7 @@ p{
     background-color: rgba(255, 255, 255, 0.801);
     
     .quieneSomos__img{
-        @include tamaño(100%, 500px);
+        @include tamaño(100%, 400px);
     }
     .quieneSomos__titulo{
         position: absolute;
@@ -276,7 +276,7 @@ p{
     background-color: rgba(255, 255, 255, 0.801);
 
     .video__gif{
-        @include tamaño(100%, 500px);
+        @include tamaño(100%, 350px);
         padding-bottom: 30px;
     }
 }
