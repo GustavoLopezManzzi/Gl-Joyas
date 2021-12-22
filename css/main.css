@@ -213,7 +213,7 @@ header .nav__links--color {
 .destacados .destacados__img {
   width: 100%;
   height: 20vw;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 @media screen and (max-width: 768px) {
   .destacados .destacados__nombre {
