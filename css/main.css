@@ -343,19 +343,21 @@ p {
 @media screen and (min-width: 768px) {
   #quieneSomos .quieneSomos__texto {
     width: 400px;
-    padding-top: 40px;
+    padding-top: 15px;
     font-size: 26px;
   }
 }
 #quieneSomos .quieneSomos__mapa {
   grid-area: quieneSomos__mapa;
   height: 300px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   #quieneSomos .quieneSomos__mapa {
     width: 600px;
     height: 300px;
-    padding-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

@@ -257,8 +257,7 @@ p{
     @media screen and (min-width:768px) {
         grid-template-areas: 
         "quieneSomos__titulo quieneSomos__titulo"
-        "quieneSomos__texto quieneSomos__mapa"
-        ;
+        "quieneSomos__texto quieneSomos__mapa";
         grid-template-rows: 8vh 90%;
         grid-template-columns: 40vw 55vw;
     }
@@ -274,7 +273,7 @@ p{
         
         @media screen and (min-width: 768px) {
             width: 400px;
-            padding-top: 40px;
+            padding-top: 15px;
             font-size: 26px;
         }
     }
@@ -282,11 +281,13 @@ p{
     .quieneSomos__mapa{
         grid-area: quieneSomos__mapa;
         height: 300px;
+        width: 100%;
 
         @media screen and (min-width: 768px) {
             width: 600px;
             height: 300px;
-            padding-top: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     }
 }
