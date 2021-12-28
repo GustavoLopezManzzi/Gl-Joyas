@@ -352,8 +352,9 @@ p {
 #quieneSomos .quieneSomos__mapa {
   grid-area: quieneSomos__mapa;
   height: 100%;
-  width: 100%;
-  padding-top: 20px;
+  width: 90%;
+  padding-top: 30px;
+  padding-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   #quieneSomos .quieneSomos__mapa {
