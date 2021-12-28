@@ -247,7 +247,7 @@ p{
     "quieneSomos__titulo quieneSomos__titulo"
     "quieneSomos__texto quieneSomos__texto"
     "quieneSomos__mapa quieneSomos__mapa";
-    grid-template-columns: 45vw 45vw;
+    grid-template-columns: 48vw 48vw;
     grid-template-rows: 8vh 30% 40%;
     grid-column-gap: 4vw;
     justify-items: center;
@@ -259,7 +259,7 @@ p{
         "quieneSomos__titulo quieneSomos__titulo"
         "quieneSomos__texto quieneSomos__mapa";
         grid-template-rows: 8vh 90%;
-        grid-template-columns: 40vw 55vw;
+        grid-template-columns: 40vw 56vw;
     }
     
     .quieneSomos__titulo{
@@ -270,6 +270,7 @@ p{
     
     .quieneSomos__texto{
         grid-area: quieneSomos__texto;
+        font-style: italic;
         
         @media screen and (min-width: 768px) {
             width: 400px;
@@ -280,7 +281,7 @@ p{
 
     .quieneSomos__mapa{
         grid-area: quieneSomos__mapa;
-        height: 300px;
+        height: 100%;
         width: 100%;
 
         @media screen and (min-width: 768px) {
