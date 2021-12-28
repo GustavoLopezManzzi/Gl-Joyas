@@ -141,7 +141,7 @@ body{
 
     .destacados__precio{
         @extend %center;
-        
+    
         @media screen and (max-width: 768px) {
             font-size: 8px;
         }   
@@ -155,6 +155,11 @@ body{
         
         @media screen and (max-width: 768px) {
             font-size: 6px;
+        }
+
+        &:hover{
+            color: rgb(36, 17, 0);
+            background-color: rgba(255, 138, 4, 0.925);
         }
     }
 }
@@ -237,38 +242,53 @@ p{
 }
 
 #quieneSomos{
-    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "quieneSomos__titulo quieneSomos__titulo"
+    "quieneSomos__texto quieneSomos__texto"
+    "quieneSomos__mapa quieneSomos__mapa";
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 8vh 30% 40%;
+    grid-column-gap: 4vw;
+    justify-items: center;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.801);
-    
-    .quieneSomos__img{
-        @include tamaño(100%, 400px);
+    background-color: rgb(241, 210, 151);
+
+    @media screen and (min-width:768px) {
+        grid-template-areas: 
+        "quieneSomos__titulo quieneSomos__titulo"
+        "quieneSomos__texto quieneSomos__mapa"
+        ;
+        grid-template-rows: 8vh 90%;
+        grid-template-columns: 40vw 55vw;
     }
+    
     .quieneSomos__titulo{
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        grid-area: quieneSomos__titulo;
         color: rgba(75, 33, 0, 1);
+        text-align: center;
     }
     
     .quieneSomos__texto{
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 420px;
+        grid-area: quieneSomos__texto;
         
-        @media screen and (max-width: 768px) {
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px;
-            font-size: 10px;
+        @media screen and (min-width: 768px) {
+            width: 400px;
+            padding-top: 40px;
+            font-size: 26px;
         }
     }
-    
+
+    .quieneSomos__mapa{
+        grid-area: quieneSomos__mapa;
+        height: 300px;
+
+        @media screen and (min-width: 768px) {
+            width: 600px;
+            height: 300px;
+            padding-top: 40px;
+        }
+    }
 }
 
 
