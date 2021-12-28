@@ -340,6 +340,7 @@ p {
 #quieneSomos .quieneSomos__texto {
   grid-area: quieneSomos__texto;
   font-style: italic;
+  width: 80%;
 }
 @media screen and (min-width: 768px) {
   #quieneSomos .quieneSomos__texto {
@@ -352,6 +353,7 @@ p {
   grid-area: quieneSomos__mapa;
   height: 100%;
   width: 100%;
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
   #quieneSomos .quieneSomos__mapa {
