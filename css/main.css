@@ -201,17 +201,17 @@ header .nav__links--color {
 .destacados .destacados__articulo1 {
   grid-area: destacados__articulo1;
   background-color: #f1d297;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .destacados .destacados__articulo2 {
   grid-area: destacados__articulo2;
   background-color: #f1d297;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .destacados .destacados__articulo3 {
   grid-area: destacados__articulo3;
   background-color: #f1d297;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .destacados .destacados__img {
   width: 100%;
