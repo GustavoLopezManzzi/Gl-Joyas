@@ -115,18 +115,30 @@ body{
         background-color: rgb(241, 210, 151);
         @extend %center;
         margin-top: 40px;
+
+        @media screen and (max-width:768px) {
+            margin-top: 20px;
+        }
     }
     .destacados__articulo2{
         grid-area: destacados__articulo2;
         background-color: rgb(241, 210, 151);
         @extend %center;
         margin-top: 40px;
+
+        @media screen and (max-width:768px) {
+            margin-top: 20px;
+        }
     }
     .destacados__articulo3{
         grid-area: destacados__articulo3;
         background-color: rgb(241, 210, 151);
         @extend %center;
         margin-top: 40px;
+
+        @media screen and (max-width:768px) {
+            margin-top: 20px;
+        }
     }
     
     .destacados__img{

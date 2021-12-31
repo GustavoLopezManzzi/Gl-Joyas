@@ -203,15 +203,30 @@ header .nav__links--color {
   background-color: #f1d297;
   margin-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .destacados .destacados__articulo1 {
+    margin-top: 20px;
+  }
+}
 .destacados .destacados__articulo2 {
   grid-area: destacados__articulo2;
   background-color: #f1d297;
   margin-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .destacados .destacados__articulo2 {
+    margin-top: 20px;
+  }
+}
 .destacados .destacados__articulo3 {
   grid-area: destacados__articulo3;
   background-color: #f1d297;
   margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .destacados .destacados__articulo3 {
+    margin-top: 20px;
+  }
 }
 .destacados .destacados__img {
   width: 100%;
