@@ -195,6 +195,8 @@ body{
     font-style: italic;
     padding-top: 30px;
     background-color: rgba(255, 255, 255, 0.801);
+    margin-top: 20px;
+    margin-bottom: 40px;
     
     .catalogo__articulo{
         display: flex;
@@ -202,18 +204,7 @@ body{
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        @include tamaño(420px, 420px);
-
-        @media screen and (max-width: 768px) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-            @include tamaño(400px, 400px);
-            max-width: 100%;
-            max-height: 100%;
-        }
+        @include tamaño(400px, 400px);
         
         .catalogo__img{
             @include tamaño(80%, 90%);

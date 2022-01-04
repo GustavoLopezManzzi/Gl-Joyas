@@ -275,6 +275,8 @@ header .nav__links--color {
   font-style: italic;
   padding-top: 30px;
   background-color: rgba(255, 255, 255, 0.801);
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 #catalogo .catalogo__articulo {
   display: flex;
@@ -282,21 +284,8 @@ header .nav__links--color {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 420px;
-  height: 420px;
-}
-@media screen and (max-width: 768px) {
-  #catalogo .catalogo__articulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    max-width: 100%;
-    max-height: 100%;
-  }
+  width: 400px;
+  height: 400px;
 }
 #catalogo .catalogo__articulo .catalogo__img {
   width: 80%;
