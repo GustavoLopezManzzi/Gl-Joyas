@@ -42,6 +42,9 @@ header .nav__logo {
   background: none;
   padding-left: 20px;
 }
+header .nav__logo:hover {
+  width: 90px;
+}
 header .nav__img {
   height: 100%;
 }
@@ -400,6 +403,9 @@ p {
   height: 80px;
   background: none;
 }
+.foo__logo:hover {
+  height: 82px;
+}
 
 .foo__img {
   height: 100%;
@@ -416,6 +422,10 @@ p {
   font-style: italic;
   font-size: 16px;
 }
+.foo__links:hover {
+  color: #1d0e01;
+  font-size: 17px;
+}
 
 .ft-social {
   height: 100%;
@@ -426,6 +436,13 @@ p {
   background: #74390b;
   justify-items: center;
   justify-content: space-between;
+}
+
+.ft-redes {
+  width: 30px;
+}
+.ft-redes:hover {
+  width: 35px;
 }
 
 .ft-newsletter {
@@ -441,6 +458,9 @@ p {
   border: 0;
   padding: 0.625rem 0.9375rem;
   margin-top: 0.3125rem;
+}
+.ft-enviar:hover {
+  background-color: #663702;
 }
 
 .ft-legal {

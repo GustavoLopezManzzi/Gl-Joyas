@@ -20,6 +20,10 @@
     padding-left: 30px;
     height: 80px;
     background: none;
+
+    &:hover{
+        height: 82px;
+    }
 }
 
 .foo__img{
@@ -36,6 +40,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: 16px;
+
+    &:hover{
+        color: rgb(29, 14, 1);
+        font-size: 17px;
+    }
 }
 
 .ft-social{
@@ -47,6 +56,14 @@
     background: rgb(116, 57, 11);
     justify-items: center;
     justify-content: space-between;
+}
+
+.ft-redes{
+    width: 30px;
+
+    &:hover{
+        width: 35px;
+    }
 }
 
 .ft-newsletter{
@@ -62,6 +79,10 @@
 	border: 0;
 	padding: 0.625rem 0.9375rem;
 	margin-top: 0.3125rem;
+
+    &:hover{
+        background-color: #663702;
+    }
 }
 
 .ft-legal {

@@ -28,6 +28,10 @@ header{
         @include tamaño(80px, 80px);
         background: none;
         padding-left: 20px;
+
+        &:hover{
+            width: 90px;
+        }
     }
     
     .nav__img{
