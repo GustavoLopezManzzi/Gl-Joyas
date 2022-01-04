@@ -442,7 +442,7 @@ footer .foo__redes {
 :root {
   --white: #ffffff;
   --red: #e31b23;
-  --bodyColor: #292b29;
+  --bodyColor: #fafffa;
   --borderFormEls: rgba(26, 12, 3, 0.938);
   --bgFormEls: rgba(148, 66, 4, 0.788);
   --bgFormElsFocus: rgba(148, 66, 4, 0.938);
@@ -491,6 +491,8 @@ ul {
 /* CHECKBOX */
 .my-form h1 {
   margin-bottom: 1.5rem;
+  color: #522c06;
+  font-style: italic;
 }
 .my-form li {
   margin-bottom: 1.5rem;
@@ -503,6 +505,7 @@ ul {
   line-height: 1.5;
   padding: 15px 10px;
   border: 1px solid var(--borderFormEls);
+  border-radius: 10px;
   color: var(--white);
   background: var(--bgFormEls);
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
@@ -520,6 +523,7 @@ ul {
   line-height: 1.5;
   padding: 15px 10px;
   border: 1px solid var(--borderFormEls);
+  border-radius: 8px;
   color: var(--white);
   background: var(--bgFormEls);
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
@@ -533,6 +537,7 @@ ul {
   line-height: 1.5;
   padding: 15px 10px;
   border: 1px solid var(--borderFormEls);
+  border-radius: 10px;
   color: var(--white);
   background: var(--bgFormEls);
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
@@ -547,6 +552,7 @@ ul {
   line-height: 1.5;
   padding: 15px 10px;
   border: 1px solid var(--borderFormEls);
+  border-radius: 25px;
   color: var(--white);
   background: var(--bgFormEls);
   transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
