@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Reseteo CSS para subsanar las diferencias de márgenes del navegador*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 * {
   margin: 0;
   padding: 0;
@@ -437,6 +438,237 @@ footer .foo__redes {
   font-size: 14px;
 }
 
+/* Reseteo */
+:root {
+  --white: #ffffff;
+  --red: #e31b23;
+  --bodyColor: #292b29;
+  --borderFormEls: rgba(26, 12, 3, 0.938);
+  --bgFormEls: rgba(148, 66, 4, 0.788);
+  --bgFormElsFocus: rgba(148, 66, 4, 0.938);
+}
+
+/*Seccion Contactos*/
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+label {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+}
+select ::-ms-expand {
+  display: none;
+}
+select :-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white);
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 1.5rem;
+  padding-bottom: 10px;
+  background-color: #d39d68;
+  border-radius: 30px;
+}
+
+/* Formato de Elementos */
+/* CHECKBOX */
+.my-form h1 {
+  margin-bottom: 1.5rem;
+}
+.my-form li {
+  margin-bottom: 1.5rem;
+}
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.my-form select {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+}
+.my-form select:focus {
+  background: var(--bgFormElsFocus);
+  transform: scale(1.02);
+}
+.my-form input {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+.my-form input:focus {
+  background: var(--bgFormElsFocus);
+  transform: scale(1.02);
+}
+.my-form textarea {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  height: 170px;
+}
+.my-form textarea:focus {
+  background: var(--bgFormElsFocus);
+  transform: scale(1.02);
+}
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  font-weight: bold;
+}
+.my-form button:enabled:hover {
+  background: var(--bgFormElsFocus);
+}
+.my-form button:enabled:hover .back {
+  transform: translate(-50%, -50%);
+}
+.my-form button:enabled:hover .front {
+  transform: translateX(110%);
+}
+.my-form button:focus {
+  background: var(--bgFormElsFocus);
+}
+.my-form button:focus .back {
+  transform: translate(-50%, -50%);
+}
+.my-form button:focus .front {
+  transform: translateX(110%);
+}
+.my-form button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.my-form button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+.my-form::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+.my-form input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+}
+.my-form input[type=checkbox]:focus + label {
+  background: var(--bgFormElsFocus);
+}
+.my-form input[type=checkbox] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+.my-form input[type=checkbox] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(148, 66, 4, 0.788);
+}
+.my-form input[type=checkbox] + label::after {
+  content: "";
+  position: absolute;
+}
+.my-form input[type=checkbox]:checked + label::before {
+  background: rgba(85, 40, 5, 0.863);
+}
+.my-form input[type=checkbox]:checked + label::after {
+  left: 7px;
+  top: 7px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg);
+}
+.my-form *:required {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
+}
+.my-form .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left/15px 15px;
+  padding-left: 20px;
+}
+.my-form .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s;
+}
+
+@media screen and (min-width: 600px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+  .my-form .required-msg {
+    display: block;
+  }
+}
+@media screen and (min-width: 541px) {
+  .my-form input[type=checkbox] + label::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .my-form input[type=checkbox]:checked + label::after {
+    top: 3px;
+  }
+}
+/*Termina Seccion Contactos*/
 /*Paginas Secundarias*/
 .lineaSuperior {
   display: inline-block;
@@ -550,67 +782,5 @@ footer .foo__redes {
   width: 100%;
   height: 400px;
 }
-
-/*Seccion Contactos*/
-.formularioContacto {
-  display: block;
-  margin-top: 30px;
-  margin-left: 130px;
-  padding-left: 50px;
-  width: 80%;
-  height: 850px;
-  background-color: rgba(217, 169, 122, 0.78);
-  border-radius: 30px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
-@media screen and (max-width: 768px) {
-  .formularioContacto {
-    display: block;
-    margin-block-start: 0%;
-    margin-top: 30px;
-    margin-left: -10px;
-    padding-left: 50px;
-    width: 100%;
-    height: 1200px;
-    background-color: rgba(217, 169, 122, 0.78);
-    border-radius: 30px;
-    margin-bottom: 30px;
-    align-items: center;
-  }
-}
-.formularioContacto .formularioContacto__titulo {
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: #4b2100;
-  padding-bottom: 30px;
-  padding-left: px;
-}
-.formularioContacto .formularioContacto__mapa {
-  float: right;
-  padding-right: 40px;
-  padding-top: 60px;
-}
-@media screen and (max-width: 1156px) {
-  .formularioContacto .formularioContacto__mapa {
-    width: 400px;
-  }
-}
-@media screen and (max-width: 909px) {
-  .formularioContacto .formularioContacto__mapa {
-    width: 350px;
-  }
-}
-.formularioContacto .formularioContacto__datos {
-  float: left;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.formularioContacto .formularioContacto__salto {
-  display: block;
-  margin-top: 10px;
-}
-
-/*Termina Seccion Contactos*/
 
 /*# sourceMappingURL=main.css.map */
