@@ -306,6 +306,10 @@ ul {
         justify-items: center;
         padding-bottom: -5px;
         color: rgba(75, 33, 0, 1);
+
+		@media screen and (min-width:768px) {
+			font-size: 20px;
+		}
     }
     
     .lineaSuperior__filtrar{
