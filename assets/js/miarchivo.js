@@ -58,7 +58,7 @@ class Producto {
 
 const productos = []
 
-productos.push(new Producto("Anillo Azul", 1200))
+productos.push(new Producto("Anillo Azul", 1300))
 productos.push(new Producto("Anillo Verde", 1500))
 productos.push(new Producto("Collar con Dije", 2000))
 
