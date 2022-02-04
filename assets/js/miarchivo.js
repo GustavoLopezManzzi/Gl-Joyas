@@ -44,7 +44,8 @@ console.log("El precio final es " + precioFinal)
 //Arrays con productos
 
 class Producto {
-    constructor (nombre, precio) {
+    constructor (id, nombre, precio) {
+        this.id = parseFloat(id);
         this.nombre = nombre.toUpperCase();
         this.precio = parseFloat(precio);
         this.vendido = false
@@ -58,14 +59,25 @@ class Producto {
 
 const productos = []
 
-productos.push(new Producto("Anillo Azul", 1300))
-productos.push(new Producto("Anillo Verde", 1500))
-productos.push(new Producto("Collar con Dije", 2000))
+productos.push(new Producto (1, "Anillo Azul", 1300))
+productos.push(new Producto (2, "Anillo Verde", 1500))
+productos.push(new Producto (3, "Collar con Dije", 2000))
 
 for(const producto of productos){
     producto.sumarIva()
 }
 
+const buscar = productos.find(Producto => Producto.id == 2)
+console.log(buscar)
+
+const existe = productos.some(Producto => Producto.nombre = "Anillo Azul")
+console.log("Existe un Anillo Azul existe? ", existe)
+
+const barato = productos.filter(Producto => Producto.precio <= 1900)
+console.log("Los articulos baratos son ", barato)
+
+const listNombres = productos.map(Producto => Producto.nombre)
+console.log(listNombres)
 
 
 
