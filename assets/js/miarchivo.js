@@ -80,6 +80,32 @@ const listNombres = productos.map(Producto => Producto.nombre)
 console.log(listNombres)
 
 
+//COMENZANDO CON DOM
+const products = [
+    {id: 1, name: "Collar rojo", price: 1200 },
+    {id: 2, name: "Collar Azul", price: 1300 },
+    {id: 3, name: "Collar Verde", price: 1600 },
+    {id: 4, name: "Collar Violeta", price: 1900 }
+]
+
+const padre = document.getElementById("productos")
+
+for(const producto of products) {
+    let contenedor = document.createElement("div")
+
+    contenedor.innerHTML = `
+        <h3> ID: ${producto.id} </h3>
+        <p> Producto: ${producto.name} </p>
+        <b> $ ${producto.price}</b>
+        <hr>
+    `
+
+    padre.appendChild(contenedor)
+
+}
+
+
+
 
 /*class Producto de otro modo{ 
     
