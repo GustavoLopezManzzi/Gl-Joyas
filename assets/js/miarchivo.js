@@ -43,7 +43,7 @@ console.log("El precio final es " + precioFinal)
 
 //Arrays con productos
 
-class Producto {
+/*class Producto {
     constructor (id, nombre, precio) {
         this.id = parseFloat(id);
         this.nombre = nombre.toUpperCase();
@@ -77,7 +77,7 @@ const barato = productos.filter(Producto => Producto.precio <= 1900)
 console.log("Los articulos baratos son ", barato)
 
 const listNombres = productos.map(Producto => Producto.nombre)
-console.log(listNombres)
+console.log(listNombres)*/
 
 
 //COMENZANDO CON DOM
@@ -104,46 +104,39 @@ for(const producto of products) {
 
 }
 
+//Comenzando con Eventos
 
+const cart = []
 
+const productos = [
+    {id: 1, name: "Pulsera con Dije", price: 1200 },
+    {id: 2, name: "Anillo Amatista", price: 3500 },
+    {id: 3, name: "Collar Sensación", price: 2700 },
+]
 
-/*class Producto de otro modo{ 
-    
-    constructor(nombre, precio) {
-        this.nombre = nombre
-        this.precio = precio
-        this.vendido = false
-    }
+const btn1 = document.getElementById("btn1")
+const btn2 = document.getElementById("btn2")
+const btn3 = document.getElementById("btn3")
 
-    sumarIva() {
-        this.precio = this.precio * 1.21;
-    }
-
-    vender() {
-        this.vendido = true
-    }
-
+function addCart(id) {
+    const producto = productos.find(p => p.id == id)
+    console.log("Add ", producto)
+    cart.push(producto)
 }
 
-const productoA = new Producto("Anillo", 1500)
-const productoB = new Producto("Collar", 2200)
+btn1.onclick = () => addCart(1)
+btn2.onclick = () => addCart(2)
+btn3.onclick = () => addCart(3)
 
-productoA.sumarIva()
-productoB.sumarIva()
+document.getElementById("btnShow").addEventListener("click", () => {
+    console.log(cart)
+})
 
-productoA.vender()
+document.getElementById("btnShowTotal").onclick = () => {
+    let total = 0
+    for(const prodCart of cart) {
+        total += prodCart.price
+    }
 
-console.log(productoA)
-console.log(productoB)*/
-
-
-
-
-
-
-
-
-
-
-
-
+    alert(`El precio total es $ ${total}`)
+}
