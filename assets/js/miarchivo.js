@@ -141,3 +141,5 @@ document.getElementById("btnShowTotal").onclick = () => {
     alert(`El precio total es $ ${total}`)
 }
 
+// COMENZANDO CON STORAGE
+
