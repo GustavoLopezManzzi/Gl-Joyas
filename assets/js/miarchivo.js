@@ -14,12 +14,12 @@ console.log(nombre, ", ingrese su edad")
 if (edad >= 18){
     alert("Tu tienes " + edad + " años," + " Puedes ingresar!");
     console.log("Tu tienes " + edad + " años," + " Puedes ingresar!")
-    let ingresarNumero = parseInt(prompt("Ingrese cualquier número"));
+    /*let ingresarNumero = parseInt(prompt("Ingrese cualquier número"));
     
     for (let i = 0; i <= 5; i++){
         let resultado = ingresarNumero * (i+1);
         console.log(ingresarNumero + " * (" + i + "+1)" + " = " + resultado);
-    }
+    }*/
 } 
 else{
     alert("Lo siento, tu tienes " + edad + " años, no puedes ingresar.");
@@ -140,3 +140,4 @@ document.getElementById("btnShowTotal").onclick = () => {
 
     alert(`El precio total es $ ${total}`)
 }
+
