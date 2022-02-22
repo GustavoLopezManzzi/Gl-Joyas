@@ -11,20 +11,12 @@ alert("Hola" + " " + nombre + " " + "Bienvenido!")
 let edad = prompt("Ingrese su edad")
 console.log(nombre, ", ingrese su edad")
 
-if (edad >= 18){
-    alert("Tu tienes " + edad + " años," + " Puedes ingresar!");
-    console.log("Tu tienes " + edad + " años," + " Puedes ingresar!")
-    /*let ingresarNumero = parseInt(prompt("Ingrese cualquier número"));
+// OPERADOR AVANZADO TERNARIO
+edad >= 18
+    ? alert("Tu tienes " + edad + " años," + " Puedes ingresar!")
     
-    for (let i = 0; i <= 5; i++){
-        let resultado = ingresarNumero * (i+1);
-        console.log(ingresarNumero + " * (" + i + "+1)" + " = " + resultado);
-    }*/
-} 
-else{
-    alert("Lo siento, tu tienes " + edad + " años, no puedes ingresar.");
-    console.log("Lo siento, tu tienes " + edad + " años, no puedes ingresar.")
-}
+    : alert("Lo siento, tu tienes " + edad + " años, no puedes ingresar.")
+
 
 /*Si tiene >= de 18 años me deja ingresar y hacer cuenta, de lo contrario no me deja ingresar y finaliza el algoritmo*/
 
@@ -141,5 +133,7 @@ document.getElementById("btnShowTotal").onclick = () => {
     alert(`El precio total es $ ${total}`)
 }
 
-// COMENZANDO CON STORAGE
+// OPERADORES AVANZADOS
+
+
 
