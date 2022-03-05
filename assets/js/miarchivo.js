@@ -120,10 +120,6 @@ btn1.onclick = () => addCart(1)
 btn2.onclick = () => addCart(2)
 btn3.onclick = () => addCart(3)
 
-document.getElementById("btnShow").addEventListener("click", () => {
-    console.log(cart)
-})
-
 document.getElementById("btnShowTotal").onclick = () => {
     let total = 0
     for(const prodCart of cart) {
